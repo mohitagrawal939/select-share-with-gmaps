@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = {
     mode: "development",
     entry: "./src/app.ts",
+    target: "node",
     devServer: {
         static: [
             {
@@ -26,5 +27,8 @@ module.exports = {
     },
     resolve: {
         extensions: [".ts", ".js"],
+        fallback: {
+            path: require.resolve("path-browserify"),
+        },
     },
 };

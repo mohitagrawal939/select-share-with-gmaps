@@ -13,6 +13,8 @@
     },
     "license": "ISC",
     "devDependencies": {
+        "@types/googlemaps": "^3.43.3",
+        "path-browserify": "^1.0.1",
         "ts-loader": "^9.5.1",
         "typescript": "^5.5.4",
         "webpack": "^5.94.0",
@@ -20,6 +22,7 @@
         "webpack-dev-server": "^5.1.0"
     },
     "dependencies": {
-        "axios": "^1.7.7"
+        "axios": "^1.7.7",
+        "dotenv": "^16.4.5"
     }
 }
