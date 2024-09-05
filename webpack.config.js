@@ -11,7 +11,7 @@ module.exports = {
         ],
     },
     output: {
-        fileName: 'bundle.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: './dist/'
     },
@@ -25,6 +25,6 @@ module.exports = {
         ]
     },
     resolve: {
-        extentions: ['.ts', '.js']
+        extensions: ['.ts', '.js']
     }
 };
