@@ -10,7 +10,18 @@ function searchAddressHandler(event: Event) {
     const enteredAddress = addressInput.value;
     console.log(enteredAddress);
 
-    axios.get(``);
+    axios
+        .get(
+            `https://maps.googleapis.com/maps/api/geocode/json?address${encodeURI(
+                enteredAddress
+            )}&key=${GOOGLE_API_KEY}`
+        )
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 }
 
 form.addEventListener("submit", searchAddressHandler);
